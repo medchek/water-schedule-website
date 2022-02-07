@@ -5,3 +5,15 @@
 html {
   font-family: "roboto", sans-serif;
 }
+
+.header-logo {
+  background: url(/imgs/header-logo.svg) no-repeat;
+}
+
+.hero-bottom {
+  background: url(/imgs/hero-bottom.svg) no-repeat;
+}
+
+.features-bg {
+  background: url(/imgs/features-bg.svg) no-repeat;
+}

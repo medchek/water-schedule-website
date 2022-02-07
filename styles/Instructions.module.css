@@ -1,0 +1,42 @@
+.rounded-pattern {
+  background-image: radial-gradient(#e9f0ff8a 6.5px, transparent 6.5px);
+  background-size: 43px 43px;
+  background-color: transparent;
+}
+
+.linear-pattern {
+  background-image: repeating-linear-gradient(
+    45deg,
+    #e9f0ff 0,
+    #e9f0ff 2px,
+    transparent 0,
+    transparent 50%
+  );
+  background-size: 55px 55px;
+  background-color: transparent;
+}
+
+.star-pattern {
+  background: radial-gradient(
+        circle,
+        transparent 20%,
+        #ffffff 20%,
+        #ffffff 80%,
+        transparent 80%,
+        transparent
+      )
+      0% 0% / 70px 70px,
+    radial-gradient(
+        circle,
+        transparent 20%,
+        #ffffff 20%,
+        #ffffff 80%,
+        transparent 80%,
+        transparent
+      )
+      35px 35px / 70px 70px,
+    linear-gradient(#e9f0ff 2.5px, transparent 2.5px) 0px -1.25px / 35px 35px,
+    linear-gradient(90deg, #e9f0ff 2.5px, #ffffff 2.5px) -1.25px 0px / 35px 35px
+      #ffffff;
+  background-color: transparent;
+}

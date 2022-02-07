@@ -1,0 +1,7 @@
+.lines-pattern {
+  background-image: radial-gradient(#d9dbf3 3px, transparent 3px),
+    radial-gradient(#d9dbf3 3px, transparent 3px);
+  background-size: 48px 48px;
+  background-position: 0 0, 24px 24px;
+  background-color: rgba(255, 255, 255, 0);
+}

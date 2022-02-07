@@ -4,7 +4,37 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        xl: "1360px",
+      },
+      colors: {
+        appBlue: "#145DFF",
+        appDarkBlue: "#111A47",
+        appDarkPurple: "#1D2D78",
+        applightBlue: "#4D84FF",
+        appGrey: "#F3F5FC",
+        appLightGray: "#F4F6FC",
+        appPurpleGrey: "#F1F5FF",
+        headerLink: "#E5E9FF",
+      },
+      minHeight: {
+        16: "4rem",
+      },
+      height: {
+        130: "27.2rem",
+        150: "33rem",
+        155: "34.6rem",
+        200: "52.5rem",
+      },
+      width: {
+        100: "28.9rem",
+        160: "37.7rem",
+      },
+      fontSize: {
+        "7xl-plus": "5.4rem",
+      },
+    },
   },
   plugins: [],
 };

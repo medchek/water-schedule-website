@@ -1,12 +1,13 @@
 import { mdiFacebook, mdiOpenInNew, mdiTwitter, mdiYoutube } from "@mdi/js";
 import Image from "next/image";
-import Icon from "../common/Icon";
+import Icon from "./Icon";
 
 import footerLogo from "../../public/imgs/footer-logo.svg";
 import googlePlayBadge from "../../public/imgs/gp-badge.png";
 
 import styles from "../../styles/Footer.module.css";
-import Padding from "../common/Padding";
+import Padding from "./Padding";
+import Link from "next/link";
 
 interface SocialLink {
   id: number;
@@ -50,10 +51,21 @@ const Footer = () => {
               Navigation
             </p>
             <div className="flex flex-col text-appDarkPurple text-lg xl:text-xl space-y-8">
-              <a href="#features">Caractéristiques</a>
-              <a href="#instructions">Instructions</a>
-              <a href="#download">Téléchargement</a>
-              <a href="#faq">FAQ</a>
+              <Link href="/#features">
+                <a href="#features">Caractéristiques</a>
+              </Link>
+              <Link href="/#instructions">
+                <a>Instructions</a>
+              </Link>
+              <Link href="/#download">
+                <a>Téléchargement</a>
+              </Link>
+              <Link href="/#faq">
+                <a>FAQ</a>
+              </Link>
+              <Link href="/about">
+                <a>À propos</a>
+              </Link>
             </div>
           </div>
           {/* INFO */}
@@ -72,7 +84,7 @@ const Footer = () => {
           {/* SOCIALS */}
           <div
             id="footer-socials"
-            className="flex flex-col items-center md:items-start w-60"
+            className="flex flex-col items-center md:items-start w-full md:w-60"
           >
             <div className="flex flex-col">
               <div className="flex justify-center w-60 md:-translate-x-3 lg:translate-x-0 h-[85px]">

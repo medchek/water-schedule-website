@@ -38,18 +38,18 @@ const HeaderDropdownNav = ({ onClickOutside }: Props) => {
     >
       <HeaderDropDownNavLink
         onClick={onClickOutside}
-        href="#features"
+        href="/#features"
         label="Caractéristiques"
       />
       <HeaderDropDownNavLink
         onClick={onClickOutside}
-        href="#download"
+        href="/#download"
         label="Télécharger"
       />
       <HeaderDropDownNavLink onClick={onClickOutside} href="#faq" label="FAQ" />
       <HeaderDropDownNavLink
         onClick={onClickOutside}
-        href="#"
+        href="/about"
         label="À propos"
       />
     </nav>

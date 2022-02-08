@@ -1,8 +1,9 @@
 import { mdiMenu } from "@mdi/js";
 import { useRef, useState } from "react";
-import Icon from "../../common/Icon";
+import Icon from "../Icon";
 import HeaderNavLink from "./HeaderNavLink";
 import HeaderDropdownNav from "./HeaderDropdownNav";
+import Link from "next/link";
 
 const Header = () => {
   const menuButtonRef = useRef<HTMLButtonElement>(null);
@@ -18,18 +19,20 @@ const Header = () => {
   return (
     <div className="w-full relative">
       <header className="flex items-center justify-between min-h-16 h-16 w-full">
-        <div className="flex space-x-2">
-          <span className="header-logo h-8 w-12  xl:h-9 xl:w-14"></span>
-          <span className="hidden lg:inline italic font-bold text-white text-3xl xl:text-4xl">
-            SEAAL
-          </span>
-        </div>
+        <Link href="/">
+          <a className="flex space-x-2">
+            <span className="header-logo h-8 w-12  xl:h-9 xl:w-14"></span>
+            <span className="hidden lg:inline italic font-bold text-white text-3xl xl:text-4xl">
+              SEAAL
+            </span>
+          </a>
+        </Link>
 
         <nav className="hidden md:flex font-medium lg:text-lg xl:text-xl space-x-8 text-headerLink ">
-          <HeaderNavLink href="#features" label="Caractéristiques" />
-          <HeaderNavLink href="#download" label="Télécharger" />
-          <HeaderNavLink href="#faq" label="FAQ" />
-          <HeaderNavLink href="#" label="À propos" />
+          <HeaderNavLink href="/#features" label="Caractéristiques" />
+          <HeaderNavLink href="/#download" label="Télécharger" />
+          <HeaderNavLink href="/#faq" label="FAQ" />
+          <HeaderNavLink href="/about" label="À propos" />
         </nav>
         {/* RESPONSIVE MENU BUTTON */}
         <button

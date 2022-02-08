@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        "wave-lines": "url('/imgs/wave-lines.svg')",
+      },
       screens: {
         xl: "1360px",
       },

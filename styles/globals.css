@@ -17,3 +17,7 @@ html {
 .features-bg {
   background: url(/imgs/features-bg.svg) no-repeat;
 }
+
+.bg-radial {
+  background: radial-gradient(closest-side, #ecf1ff, transparent);
+}

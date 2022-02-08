@@ -3,9 +3,9 @@ import Head from "next/head";
 import Download from "../components/home/Download";
 import Faq from "../components/home/faq/Faq";
 import Features from "../components/home/features/Features";
-import Footer from "../components/home/Footer";
+import Footer from "../components/common/Footer";
 // import Image from "next/image";
-import HeroWithHeader from "../components/home/Hero";
+import HomeHeroWithHeader from "../components/home/Hero";
 import Instructions from "../components/home/instructions/Instructions";
 
 const Home: NextPage = () => {
@@ -20,7 +20,7 @@ const Home: NextPage = () => {
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
 
-      <HeroWithHeader />
+      <HomeHeroWithHeader />
 
       {/* px-28 */}
       <main className="w-full">

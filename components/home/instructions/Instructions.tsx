@@ -6,7 +6,7 @@ import wilayasImage from "../../../public/imgs/ins-wl.png";
 import townsImage from "../../../public/imgs/ins-tw.png";
 import scheduleImage from "../../../public/imgs/ins-sch.png";
 
-import styles from "../../../styles/Instructions.module.css";
+import styles from "../../../styles/home/Instructions.module.css";
 import Padding from "../../common/Padding";
 
 const Instructions = () => {

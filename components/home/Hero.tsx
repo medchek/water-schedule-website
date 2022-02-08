@@ -1,7 +1,7 @@
 import { Fragment } from "react";
-import Header from "./header/Header";
+import Header from "../common/header/Header";
 
-import styles from "../../styles/Hero.module.css";
+import styles from "../../styles/home/Hero.module.css";
 
 import heroImage from "../../public/imgs/hero-img.png";
 import Image from "next/image";

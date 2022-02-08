@@ -66,7 +66,7 @@ const Features = () => {
 
       <div
         id="features-showcase"
-        className="flex flex-col-reverse lg:flex-row w-full mx-5"
+        className="flex flex-col-reverse lg:flex-row w-full md:space-x-10 2xl:space-x-0"
       >
         {/* FEATURES ILLUSTRATIONS */}
         <section

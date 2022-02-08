@@ -1,4 +1,4 @@
-import { Fragment, useState } from "react";
+import { useState } from "react";
 import FaqAccordionItem from "./FaqAccordionItem";
 
 interface FaqItem {
@@ -33,7 +33,7 @@ const faqData: FaqItem[] = [
     id: 4,
     question: "Le serveur est injoignable, que devrais-je faire?",
     answer:
-      "Veuillez dabord vous assurer que votre téléphone est connecté à internet. Si c'est le cas, ce la signale que les serveurs sont actuellement injoignable pour des raison de maintenance ou à cause de difficultées technique, veuillez réessayer votre requête ultérieurement.",
+      "Veuillez dabord vous assurer que votre téléphone est connecté à internet. Si c'est le cas, ce la signale que les serveurs sont actuellement injoignable pour des raison de maintenance ou à cause de difficultées techniques, veuillez réessayer votre requête ultérieurement.",
     isOpen: false,
   },
   {

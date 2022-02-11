@@ -19,7 +19,7 @@ const FaqAccordionItem = ({ question, answer, isOpen, onClick }: Props) => {
   return (
     <div className="w-full">
       <button
-        className="flex items-center justify-between px-4 py-2 lg:px-8 w-full min-h-16 bg-appPurpleGrey hover:bg-[#e8eefd] focus:bg-[#e3eafc] text-[#6282D9] rounded-lg"
+        className="flex items-center justify-between px-4 py-2 lg:px-8 w-full min-h-16 bg-appPurpleGrey dark:bg-[#050F3A] dark:hover:bg-[#13205e] hover:bg-[#e8eefd] focus:bg-[#e3eafc] text-[#6282D9] dark:text-[#7592e1] rounded-lg"
         onClick={onClick}
       >
         {/* QUESTION */}
@@ -32,7 +32,7 @@ const FaqAccordionItem = ({ question, answer, isOpen, onClick }: Props) => {
         </div>
       </button>
       {isOpen && (
-        <p className="px-4 lg:px-8 pt-5 text-appDarkBlue text-base md:text-lg">
+        <p className="px-4 lg:px-8 pt-5 text-appDarkBlue dark:text-appPurpleGrey text-base md:text-lg">
           {answer}
         </p>
       )}

@@ -1,9 +1,17 @@
-import { mdiMenu } from "@mdi/js";
-import { useRef, useState } from "react";
+import {
+  mdiBrightness4,
+  mdiBrightness7,
+  mdiMenu,
+  mdiWeatherNight,
+} from "@mdi/js";
+import { useContext, useRef, useState } from "react";
 import Icon from "../Icon";
 import HeaderNavLink from "./HeaderNavLink";
 import HeaderDropdownNav from "./HeaderDropdownNav";
 import Link from "next/link";
+
+import { Theme } from "../../../lib/enums";
+import { ThemeContext } from "../../../context/theme-context";
 
 const Header = () => {
   const menuButtonRef = useRef<HTMLButtonElement>(null);
@@ -12,9 +20,16 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
   const handleCloseMenu = () => {
-    console.log("closing the menu");
     setIsMenuOpen(false);
   };
+
+  const { theme, toggleTheme } = useContext(ThemeContext);
+
+  const handleToggleTheme = () => {
+    toggleTheme();
+  };
+
+  const themeIcon = theme === Theme.Dark ? mdiWeatherNight : mdiBrightness7;
 
   return (
     <div className="w-full relative">
@@ -33,8 +48,16 @@ const Header = () => {
           <HeaderNavLink href="/#download" label="Télécharger" />
           <HeaderNavLink href="/#faq" label="FAQ" />
           <HeaderNavLink href="/about" label="À propos" />
+          <button
+            onClick={handleToggleTheme}
+            className="flex items-center justify-center w-9 h-9 rounded-lg hover:bg-appDarkPurple/20 dark:hover:bg-appDarkPurple"
+          >
+            <Icon icon={themeIcon} className="w-7 h-7 " />
+          </button>
         </nav>
+
         {/* RESPONSIVE MENU BUTTON */}
+
         <button
           ref={menuButtonRef}
           id="open-menu"
@@ -43,7 +66,7 @@ const Header = () => {
         >
           <Icon
             icon={mdiMenu}
-            className="text-white  w-10 h-10 pointer-events-none"
+            className="text-white w-10 h-10 pointer-events-none"
           />
         </button>
       </header>

@@ -7,30 +7,33 @@ import Footer from "../components/common/Footer";
 // import Image from "next/image";
 import HomeHeroWithHeader from "../components/home/Hero";
 import Instructions from "../components/home/instructions/Instructions";
+import AppMain from "../components/common/AppMain";
 
 const Home: NextPage = () => {
   return (
-    <div className="antialiased overflow-hidden">
-      <Head>
-        <title>Programme d&apos;eau - SEAAL</title>
-        <meta
-          name="description"
-          content="Site web de l'application des programmes d'eau de seaal"
-        />
-        {/* <link rel="icon" href="/favicon.ico" /> */}
-      </Head>
+    <AppMain>
+      <div className="bg-white dark:bg-darkAppBg">
+        <Head>
+          <title>Programme d&apos;eau - SEAAL</title>
+          <meta
+            name="description"
+            content="Site web de l'application des programmes d'eau de seaal"
+          />
+          {/* <link rel="icon" href="/favicon.ico" /> */}
+        </Head>
 
-      <HomeHeroWithHeader />
+        <HomeHeroWithHeader />
 
-      {/* px-28 */}
-      <main className="w-full">
-        <Features />
-        <Instructions />
-        <Download />
-        <Faq />
-        <Footer />
-      </main>
-    </div>
+        {/* px-28 */}
+        <main className="w-full">
+          <Features />
+          <Instructions />
+          <Download />
+          <Faq />
+          <Footer />
+        </main>
+      </div>
+    </AppMain>
   );
 };
 

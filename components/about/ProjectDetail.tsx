@@ -53,7 +53,7 @@ const ProjectDetail = () => {
   ));
   return (
     <div className="mt-24" id="project-details">
-      <h1 className="w-full text-center text-3xl md:text-4xl lg:text-[40px] 2xl:text-[50px] font-bold text-appBlue">
+      <h1 className="w-full text-center text-3xl md:text-4xl lg:text-[40px] 2xl:text-[50px] font-bold text-appBlue dark:text-appPurpleGrey">
         Les projets en details
       </h1>
 

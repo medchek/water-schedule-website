@@ -2,12 +2,13 @@ import { mdiFacebook, mdiOpenInNew, mdiTwitter, mdiYoutube } from "@mdi/js";
 import Image from "next/image";
 import Icon from "./Icon";
 
-import footerLogo from "../../public/imgs/footer-logo.svg";
+// import footerLogo from "../../public/imgs/footer-logo.svg";
 import googlePlayBadge from "../../public/imgs/gp-badge.png";
 
 import styles from "../../styles/Footer.module.css";
 import Padding from "./Padding";
 import Link from "next/link";
+import FooterLogoSvg from "../svg/FooterLogoSvg";
 
 interface SocialLink {
   id: number;
@@ -27,30 +28,30 @@ const Footer = () => {
     <Padding
       tag="footer"
       id="footer"
-      className="flex flex-col w-full pt-20 bg-gradient-to-b from-appPurpleGrey to-white"
+      className="flex flex-col w-full pt-20 bg-gradient-to-b from-appPurpleGrey to-white dark:from-darkAppHero dark:to-darkAppBg"
     >
       <section className="flex flex-col md:flex-row mb-10 lg:mb-80 space-y-20 md:space-y-0 md:space-x-20 lg:space-x-0">
         {/* LOGO */}
         <div className="relative flex items-start mr-10 lg:mr-10 xl:mr-36">
-          <div className="relative z-10 w-28 md:w-36 xl:w-[190px] flex flex-col items-start text-appDarkPurple">
-            <Image src={footerLogo} alt="footer-logo" />
-            <p className="text-4xl md:text-5xl xl:text-6xl font-bold italic">
+          <div className="relative z-10 w-28 md:w-36 xl:w-[190px] flex flex-col items-start text-appDarkPurple dark:text-appPurpleGrey">
+            <FooterLogoSvg />
+            <p className="text-4xl md:text-5xl xl:text-6xl font-bold italic ">
               SEAAL
             </p>
           </div>
           <div
             id="footer-filler-pattern"
-            className={`absolute lg:hidden h-48 w-44 right-0  ${styles["lines-pattern"]}`}
+            className={`absolute lg:hidden h-48 w-44 right-0  ${styles["lines-pattern"]} dark:opacity-10`}
           ></div>
         </div>
 
-        <section className="flex grow flex-col lg:flex-row lg:justify-between lg:space-x-5 space-y-20 lg:space-y-0 ">
+        <section className="flex grow flex-col lg:flex-row lg:justify-between lg:space-x-5 space-y-20 lg:space-y-0 pl-5">
           {/* LINKS */}
           <div>
-            <p className="font-bold text-xl xl:text-2xl text-appDarkPurple mb-10">
+            <p className="font-bold text-xl xl:text-2xl text-appDarkPurple dark:text-appPurpleGrey mb-10">
               Navigation
             </p>
-            <div className="flex flex-col text-appDarkPurple text-lg xl:text-xl space-y-8">
+            <div className="flex flex-col text-appDarkPurple dark:text-white text-lg xl:text-xl space-y-8">
               <Link href="/#features">
                 <a href="#features">Caractéristiques</a>
               </Link>
@@ -70,10 +71,10 @@ const Footer = () => {
           </div>
           {/* INFO */}
           <div id="">
-            <p className="font-bold text-xl xl:text-2xl text-appDarkPurple mb-10">
+            <p className="font-bold text-xl xl:text-2xl text-appDarkPurple dark:text-appPurpleGrey mb-10">
               Information SEAAL
             </p>
-            <div className="flex flex-col text-appDarkPurple text-lg xl:text-xl space-y-8 lg:w-[300px] xl:w-[450px] font-thin">
+            <div className="flex flex-col text-appDarkPurple dark:text-white text-lg xl:text-xl space-y-8 lg:w-[300px] xl:w-[450px] font-thin">
               <p>Numero de contact: 1594 disponible 24h/24 7j/7</p>
               <p>
                 Les agences clientèle sont ouvertes du samedi au jeudi, de 8h à
@@ -96,7 +97,7 @@ const Footer = () => {
                   />
                 </a>
               </div>
-              <div className="lg:w-full flex items-center justify-between text-appDarkPurple mt-5 space-x-6 lg:space-x-0">
+              <div className="lg:w-full flex items-center justify-between text-appDarkPurple dark:text-appPurpleGrey mt-5 space-x-6 lg:space-x-0">
                 {socialLinks.map((link) => (
                   <a
                     key={link.id}
@@ -106,7 +107,7 @@ const Footer = () => {
                   >
                     <Icon
                       icon={link.icon}
-                      className="w-10 h-10 hover:text-appDarkBlue"
+                      className="w-10 h-10 hover:text-appDarkBlue dark:hover:text-white"
                     />
                   </a>
                 ))}
@@ -118,7 +119,7 @@ const Footer = () => {
 
       {/* COPYRIGHT */}
 
-      <section className="flex justify-between items-center h-14 w-full text-appDarkPurple text-base lg:text-lg border-t-2 border-appBlue/10">
+      <section className="flex justify-between items-center h-14 w-full text-appDarkPurple dark:text-[#8a92b6] text-base lg:text-lg border-t-2 border-appBlue/10">
         <span className="flex items-center ">
           <span className="lg:text-xl mr-2 lg:mr-5">©</span> {currentYar} SEAAL
         </span>

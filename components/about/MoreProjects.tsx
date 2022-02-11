@@ -5,7 +5,7 @@ const MoreProjects = () => {
   return (
     <section
       id="about-github"
-      className="relative flex flex-col items-center justify-center text-app w-full h-[450px] lg:h-[600px] bg-radial  text-appDarkPurple mb-36 px-5 lg:px-0"
+      className="relative flex flex-col items-center justify-center text-app w-full h-[450px] lg:h-[600px] bg-radial  dark:bg-radial-dark text-appDarkPurple dark:text-appPurpleGrey mb-36 px-5 lg:px-0"
     >
       <div className="mb-14 text-center space-y-5">
         <h1 className="text-4xl lg:text-6xl font-bold">Autres projets</h1>
@@ -16,7 +16,7 @@ const MoreProjects = () => {
 
       <a
         href="https://github.com/medchek"
-        className="flex justify-center items-center h-16 lg:h-20 w-64 lg:w-[405px] rounded-xl bg-white text-appDarkPurple text-lg lg:text-xl font-medium space-x-3 hover:scale-[1.03] transition-all shadow-lg"
+        className="flex justify-center items-center h-16 lg:h-20 w-64 lg:w-[405px] rounded-xl bg-white text-appDarkPurple text-lg lg:text-xl font-medium space-x-3 hover:scale-[1.03] transition-all shadow-lg hover:shadow-2xl hover:dark:shadow-blue-900"
       >
         <Icon icon={mdiGithub} className="w-10 h-10 lg:w-12 lg:h-12" />
         <span>Voir sur Github</span>

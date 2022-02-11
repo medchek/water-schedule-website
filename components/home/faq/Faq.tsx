@@ -6,7 +6,7 @@ const Faq = () => {
     <Padding className="py-20 lg:py-48">
       <h1
         id="faq"
-        className="text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl text-appDarkPurple text-center"
+        className="text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl text-appDarkPurple dark:text-appPurpleGrey text-center"
       >
         Questions Fréquents
       </h1>

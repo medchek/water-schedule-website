@@ -56,7 +56,7 @@ const Features = () => {
     <Padding tag="section" id="features">
       <div className="w-full h-20 text-center">
         <div className="relative inline-block w-auto h-12 lg:h-16 text-center font-medium">
-          <h2 className="inline-block text-[30px] lg:text-[40px] text-appDarkBlue">
+          <h2 className="inline-block text-[30px] lg:text-[40px] text-appDarkBlue dark:text-appPurpleGrey">
             Caractéristiques
           </h2>
           <span className="absolute right-0 bottom-0 h-1 w-3/12 bg-applightBlue rounded-full"></span>
@@ -71,12 +71,12 @@ const Features = () => {
         {/* FEATURES ILLUSTRATIONS */}
         <section
           id="features-illustration"
-          className="flex items-center justify-center relative lg:w-1/2 h-full"
+          className="flex items-center justify-center relative lg:w-1/2 h-full "
         >
           <div className="relative image-wrapper z-10">
             <Image src={featuresImage} alt="image-caractéristiques" />
           </div>
-          <div className="image-wrapper flex items-center absolute top-0 bottom-0">
+          <div className="image-wrapper flex items-center absolute top-0 bottom-0 dark:opacity-20">
             <Image
               src={featuresBg}
               className="absolute top-0"

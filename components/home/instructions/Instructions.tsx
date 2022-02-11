@@ -12,14 +12,15 @@ import Padding from "../../common/Padding";
 const Instructions = () => {
   return (
     <section id="instructions" className="mt-20">
-      <div className="flex items-center justify-center h-[210px] w-full bg-appGrey">
+      {/* dark:bg-[#010C39]  */}
+      <div className="flex items-center justify-center h-[210px] w-full bg-appGrey dark:bg-[#0B1748]">
         <div className="px-5 lg:px-0 flex flex-col lg:flex-row space-x-2">
           {/* TEXT */}
           <div className="w-[450px] xl:w-[680px] flex flex-col">
-            <p className="text-center lg:text-left text-3xl md:text-4xl xl:text-5xl text-appDarkPurple">
+            <p className="text-center lg:text-left text-3xl md:text-4xl xl:text-5xl text-appDarkPurple dark:text-appLightGray/90">
               Comment ça marche?
             </p>
-            <p className="text-center lg:text-right text-4xl md:text-5xl xl:text-6xl text-appDarkPurple font-medium">
+            <p className="text-center lg:text-right text-4xl md:text-5xl xl:text-6xl text-appDarkPurple font-medium dark:text-appPurpleGrey">
               C&apos;est facile!
             </p>
           </div>
@@ -30,7 +31,7 @@ const Instructions = () => {
           >
             <Icon
               icon={mdiHandOkay}
-              className="w-20 h-20 lg:w-36 lg:h-36 text-appBlue/10"
+              className="w-20 h-20 lg:w-36 lg:h-36 text-appBlue/10 dark:text-[#122161]"
             />
           </div>
         </div>
@@ -47,7 +48,7 @@ const Instructions = () => {
           {/* Pattern */}
 
           <span
-            className={`${styles["rounded-pattern"]} absolute  right-0 w-28 h-36 lg:w-52 lg:h-64`}
+            className={`${styles["rounded-pattern"]} absolute  right-0 w-28 h-36 lg:w-52 lg:h-64 dark:opacity-10`}
           ></span>
         </SingleInstruction>
 
@@ -58,7 +59,7 @@ const Instructions = () => {
           </p>
           {/* Pattern */}
           <span
-            className={`${styles["linear-pattern"]} absolute  right-0 w-40 h-44 lg:w-52 lg:h-64`}
+            className={`${styles["linear-pattern"]} absolute  right-0 w-40 h-44 lg:w-52 lg:h-64 dark:opacity-10`}
           ></span>
         </SingleInstruction>
 
@@ -69,7 +70,7 @@ const Instructions = () => {
           </p>
 
           <span
-            className={`${styles["star-pattern"]} -z-10 absolute right-0 w-40 h-44 lg:w-52 lg:h-64 `}
+            className={`${styles["star-pattern"]} ${styles["dark-star-pattern"]} dark:hidden absolute right-0 w-40 h-44 lg:w-52 lg:h-64`}
           ></span>
         </SingleInstruction>
       </Padding>

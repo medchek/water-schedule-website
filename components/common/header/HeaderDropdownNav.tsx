@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import HeaderDropDownNavLink from "./HeaderDropDownNavLink";
+import HeaderThemeSelector from "./HeaderThemeSelector";
 
 interface Props {
   onClickOutside: () => void;
@@ -52,6 +53,7 @@ const HeaderDropdownNav = ({ onClickOutside }: Props) => {
         href="/about"
         label="À propos"
       />
+      <HeaderThemeSelector />
     </nav>
   );
 };

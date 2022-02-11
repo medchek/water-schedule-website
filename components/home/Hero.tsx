@@ -10,11 +10,13 @@ import Icon from "../common/Icon";
 import { mdiGooglePlay } from "@mdi/js";
 import Padding from "../common/Padding";
 
+import HeroBottomSvg from "../svg/HeroBottomSvg";
+
 const Hero = () => {
   return (
     <Fragment>
       {/* HERO TOP PART */}
-      <Padding className="relative flex flex-col w-full h-[420px] lg:h-[528px] bg-appBlue">
+      <Padding className="relative flex flex-col w-full h-[420px] lg:h-[528px] bg-appBlue dark:bg-darkAppHero">
         <Header />
         <section
           id="hero-content"
@@ -22,12 +24,12 @@ const Hero = () => {
         >
           <div
             id="hero-text"
-            className="relative z-20 flex flex-col items-start w-[600px] 2xl:w-[700px] md:pt-20 lg:pt-32"
+            className="relative z-20 flex flex-col items-start w-full sm:w-[600px] 2xl:w-[700px] pt-10 md:pt-20 lg:pt-32"
           >
-            <h1 className="text-[50px] md:text[55px] lg:text-[62px] xl:text-[70px] 2xl:text-7xl-plus font-bold leading-tight">
+            <h1 className="text-[40px] sm:text-[50px] md:text[55px] lg:text-[62px] xl:text-[70px] 2xl:text-7xl-plus font-bold leading-tight">
               Restez infromés
             </h1>
-            <p className="text-base xl:text-xl 2xl:text-2xl font-thin w-[380px] lg:w-[400px] xl:w-[600px] mt-2">
+            <p className="text-base xl:text-xl 2xl:text-2xl font-thin w-[300px] sm:w-[380px] lg:w-[400px] xl:w-[600px] mt-2">
               Soyez toujours informé sur les temps de coupures et
               rétablissements d&apos;eau au niveau de votre commune.
             </p>
@@ -57,7 +59,7 @@ const Hero = () => {
             <div className="flex flex-col items-end absolute bottom-0 md:bottom-1/4 right-0 h-130 w-72 space-y-4">
               {/* FIRST CIRCLE */}
               <span
-                className={`w-36 h-36 lg:w-[279px] lg:h-[264px] bg-[#1350DD] rounded-full ${styles.levitation}`}
+                className={`w-36 h-36 lg:w-[279px] lg:h-[264px] bg-[#1350DD] dark:opacity-30 rounded-full ${styles.levitation}`}
               ></span>
               {/* SECOND CIRCLE */}
 
@@ -80,8 +82,10 @@ const Hero = () => {
       {/* HERO BOTTOm lg + = 554px */}
       <div
         id="hero-bottom"
-        className="hero-bottom -translate-y-1 h-[150px] md:h-[300px] xl:h-[400px] 2xl:h-155 w-full mb-12 lg:mb-0"
-      ></div>
+        className="-translate-y-1 h-[150px] md:h-[300px] xl:h-[400px] 2xl:h-155 w-full mb-12 lg:mb-0"
+      >
+        <HeroBottomSvg />
+      </div>
     </Fragment>
   );
 };

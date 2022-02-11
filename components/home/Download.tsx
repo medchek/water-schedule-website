@@ -5,7 +5,7 @@ const Download = () => {
   return (
     <div
       id="download"
-      className="px-5 flex flex-col items-center justify-center w-full bg-appDarkPurple py-24 lg:py-32 text-white"
+      className="px-5 flex flex-col items-center justify-center w-full bg-appDarkPurple dark:bg-darkAppDlBg py-24 lg:py-32 text-white"
     >
       <h1 className="text-center text-[30px] md:text-5xl lg:text-6xl font-bold lg:font-medium mb-5">
         Disponible sur Google Playstore

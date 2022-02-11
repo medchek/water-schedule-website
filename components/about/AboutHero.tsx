@@ -4,11 +4,12 @@ import Padding from "../common/Padding";
 import Header from "../common/header/Header";
 
 import AboutHeroDropsIllustration from "../../public/imgs/drops.svg";
+import AboutHeroButtomSvg from "../svg/AboutHeroBottomSvg";
 
 const AboutHero = () => {
   return (
     <Fragment>
-      <Padding className="flex flex-col w-full h-auto xl:h-[570px] bg-appBlue">
+      <Padding className="flex flex-col w-full h-auto xl:h-[570px] bg-appBlue dark:bg-darkAppHero">
         <Header />
         <div
           id="about-hero-content"
@@ -62,8 +63,10 @@ const AboutHero = () => {
       </Padding>
       <div
         id="hero-bottom"
-        className=" -translate-y-1 h-10 md:h-16 lg:h-[110px] w-full  bg-[url('/imgs/about-hero-bottom.svg')]"
-      ></div>
+        className=" -translate-y-1 h-10 md:h-16 lg:h-[110px] w-full"
+      >
+        <AboutHeroButtomSvg />
+      </div>
     </Fragment>
   );
 };

@@ -1,4 +1,5 @@
 module.exports = {
+  darkMode: "class",
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
@@ -20,6 +21,10 @@ module.exports = {
         appLightGray: "#F4F6FC",
         appPurpleGrey: "#F1F5FF",
         headerLink: "#E5E9FF",
+        // dark theme colors
+        darkAppHero: "#091342",
+        darkAppBg: "#00072A",
+        darkAppDlBg: "#111A47",
       },
       minHeight: {
         16: "4rem",

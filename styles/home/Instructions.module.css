@@ -40,3 +40,29 @@
       #ffffff;
   background-color: transparent;
 }
+
+.dark .dark-star-pattern {
+  background: radial-gradient(
+        circle,
+        transparent 20%,
+        #00072a 20%,
+        #00072a 80%,
+        transparent 80%,
+        transparent
+      )
+      0% 0% / 70px 70px,
+    radial-gradient(
+        circle,
+        transparent 20%,
+        #00072a 20%,
+        #00072a 80%,
+        transparent 80%,
+        transparent
+      )
+      35px 35px / 70px 70px,
+    linear-gradient(rgba(162, 162, 242, 0.21) 2px, transparent 2px) 0px -1px / 35px
+      35px,
+    linear-gradient(90deg, rgba(162, 162, 242, 0.21) 2px, #00072a 2px) -1px 0px /
+      35px 35px #00072a;
+  background-color: #00072a;
+}

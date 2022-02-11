@@ -10,9 +10,9 @@ html {
   background: url(/imgs/header-logo.svg) no-repeat;
 }
 
-.hero-bottom {
+/* .hero-bottom {
   background: url(/imgs/hero-bottom.svg) no-repeat;
-}
+} */
 
 .features-bg {
   background: url(/imgs/features-bg.svg) no-repeat;
@@ -20,4 +20,8 @@ html {
 
 .bg-radial {
   background: radial-gradient(closest-side, #ecf1ff, transparent);
+}
+
+.dark .dark\:bg-radial-dark {
+  background: radial-gradient(closest-side, #131e44, transparent);
 }

@@ -30,7 +30,7 @@ const Showcase = ({ title, text, img, alt, number, reverse }: Props) => {
       {/* IMAGE */}
       <div className="lg:w-1/2 relative z-10 ">
         <div className="w-full h-full  flex items-center justify-center">
-          <Image src={img} alt={alt} />
+          <Image src={img} alt={alt} quality={100} />
         </div>
       </div>
       {/* BG */}

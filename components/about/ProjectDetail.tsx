@@ -24,7 +24,7 @@ const projects: ProjectDetail[] = [
   {
     id: 2,
     title: "Application Android",
-    text: "L'application mobile est conçu pour le grand publique et leurs permet de consulter les informations liées au programmes d'eau de leurs communes. Elle expose les donées centenu dans la base de donées précédement entrées par le bias de d'administration. L'application est écrite en Dart ultilisant le framework Flutter. Flutter a était préféré à React-Native pour sa performance accru.",
+    text: "L'application mobile est conçu pour le grand publique et leur permet de consulter les programmes d'eau des communes. Elle donne accès au informations centenu dans la base de données précédement entrées par le biais de d'administration. L'application est écrite en Dart ultilisant le framework Flutter. Flutter a était préféré à React-Native pour sa performance accru.",
     img: appShowcase,
     alt: "app-showcase",
     reverse: true,
@@ -32,7 +32,7 @@ const projects: ProjectDetail[] = [
   {
     id: 3,
     title: "Site de Présentation",
-    text: "Le site de présentation de l'application rassemble differents informations concerant cette dernière. Le site est ecrit en Typescript utilisant le framework Nextjs qui est lui même basé sur React. Nextjs offre l'aventage du SSR/SSG à la place du tradionnel SPA de React, ce qui offre un meilleur SEO ou en d'autres termes, une exposition optiamal au moteurs de recherches.",
+    text: "Le site de présentation de l'application rassemble differents informations concerant celle ci. Le site est ecrit en Typescript utilisant le framework Nextjs qui est lui même basé sur React. Nextjs offre l'aventage du SSR/SSG à la place du tradionnel SPA de React, ce qui offre un meilleur SEO ou en d'autres termes, une exposition optimale au moteurs de recherches.",
     img: siteShowcase,
     alt: "app-site-showcase",
     reverse: false,

@@ -4,6 +4,10 @@ This app is the website dedicated to showcase the water schedule app which can b
 
 **Note:** The website and the phone app are just a for demonstration purposes, however, they are also production-ready.
 
+<p align="center">
+  <img src="./.github/app-showcase.png" />
+</p>
+
 ## Developement
 
 To run the development server:
@@ -20,4 +24,4 @@ The SEAAL (Société des Eaux et de l’Assainissement d’Alger) brand name is 
 
 ## License
 
-The app is released under the [LGPL-3.0 license](https://opensource.org/licenses/LGPL-3.0).
+The app is released under the [GPL-3.0 license](https://www.gnu.org/licenses/gpl-3.0.en.html).

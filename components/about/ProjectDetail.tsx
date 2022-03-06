@@ -9,6 +9,7 @@ interface ProjectDetail {
   text: string;
   img: StaticImageData;
   alt: string;
+  link: string;
   reverse: boolean;
 }
 
@@ -19,6 +20,7 @@ const projects: ProjectDetail[] = [
     text: "L'administration permet de gérer et ajouter les temps de coupures et rétablissements pour l'ensemble des 58 wilayas et leurs communes. Concernant les details techniques, l'administration est écrite en php avec le framework Laravel. L'interface de cette dernière est une SPA basée sur le framework javascript Vuejs aisi que Tailwindcss pour générer tout le CSS. Le serveur de l'administration comprend ausi une API publique pour permettre l'interaction avec l'application utilisateur Android.",
     img: adminShowcase,
     alt: "admin-showcase",
+    link: "https://github.com/medchek/water-schedule-admin",
     reverse: false,
   },
   {
@@ -27,6 +29,8 @@ const projects: ProjectDetail[] = [
     text: "L'application mobile est conçu pour le grand publique et leur permet de consulter les programmes d'eau des communes. Elle donne accès au informations centenu dans la base de données précédement entrées par le biais de d'administration. L'application est écrite en Dart ultilisant le framework Flutter. Flutter a était préféré à React-Native pour sa performance accru.",
     img: appShowcase,
     alt: "app-showcase",
+    link: "https://github.com/medchek/water-schedule-app",
+
     reverse: true,
   },
   {
@@ -35,6 +39,8 @@ const projects: ProjectDetail[] = [
     text: "Le site de présentation de l'application rassemble differents informations concerant celle ci. Le site est ecrit en Typescript utilisant le framework Nextjs qui est lui même basé sur React. Nextjs offre l'aventage du SSR/SSG à la place du tradionnel SPA de React, ce qui offre un meilleur SEO ou en d'autres termes, une exposition optimale au moteurs de recherches.",
     img: siteShowcase,
     alt: "app-site-showcase",
+    link: "https://github.com/medchek/water-schedule-website",
+
     reverse: false,
   },
 ];
@@ -48,6 +54,7 @@ const ProjectDetail = () => {
       text={project.text}
       img={project.img}
       alt={project.alt}
+      link={project.link}
       reverse={project.reverse}
     />
   ));

@@ -1,8 +1,8 @@
 # Water Schedule App Website
 
-This app is the website dedicated to showcase the water schedule app which can be found in this [repository](https://github.com/medchek/water-schedule-app). It includes divers informations regarding the phone app and its features. The website is written in typescript using [Nextjs](https://nextjs.org/) and was designed with [Adobe Xd](https://www.adobe.com/products/xd.html). It also features a dark mode and is fully responsive.
+This project is a website dedicated to showcase the water availablity schedules app which can be found in this [repository](https://github.com/medchek/water-schedule-app). It includes divers information regarding the phone app and its features. The website is written in typescript using [Nextjs](https://nextjs.org/) and was designed with [Adobe Xd](https://www.adobe.com/products/xd.html). It also features a dark mode and is fully responsive.
 
-**Note:** The website and the phone app are just a for demonstration purposes, however, they are also production-ready.
+**Note:** The website and the phone app are just for demonstration purposes, however, they are also production-ready.
 
 <p align="center">
   <img src="./.github/app-showcase.png" />

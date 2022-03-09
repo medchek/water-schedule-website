@@ -9,7 +9,7 @@ import AboutHeroButtomSvg from "../svg/AboutHeroBottomSvg";
 const AboutHero = () => {
   return (
     <Fragment>
-      <Padding className="flex flex-col w-full h-auto xl:h-[570px] bg-appBlue dark:bg-darkAppHero">
+      <Padding className="flex flex-col w-full h-auto xl:h-[570px] bg-gradient-to-b from-[#0245d5] via-[#286cff] to-appBlue dark:from-darkAppHero dark:via-[#1b2970] dark:to-darkAppHero">
         <Header />
         <div
           id="about-hero-content"

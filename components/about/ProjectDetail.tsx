@@ -2,6 +2,7 @@ import Showcase from "./Showcase";
 import adminShowcase from "../../public/imgs/admin-showcase.png";
 import appShowcase from "../../public/imgs/app-showcase.png";
 import siteShowcase from "../../public/imgs/app-site-showcase.png";
+import type { StaticImageData } from "next/image";
 
 interface ProjectDetail {
   id: number;

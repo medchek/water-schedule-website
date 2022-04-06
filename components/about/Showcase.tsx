@@ -3,6 +3,8 @@ import Image from "next/image";
 import Icon from "../common/Icon";
 import Padding from "../common/Padding";
 
+import type { StaticImageData } from "next/image";
+
 interface Props {
   number: number;
   title: string;

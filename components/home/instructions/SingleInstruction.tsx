@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { ReactNode } from "react";
+import type { StaticImageData } from "next/image";
 
 interface Props {
   children: ReactNode;

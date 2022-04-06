@@ -21,20 +21,20 @@ interface Feature {
 const featuresData: Feature[] = [
   {
     id: 1,
-    title: "Planifiez à l'avence",
-    text: "En raison de manque de pluit qui touche notre pays, l'eau n'est pas toujours disponible. Avec l'application seaal, vous pouvez être informé sur les temps de coupures et rétablissments, et plannifer vos taches implicants l'ulilisation d'eau.",
+    title: "Planifiez à l'avance",
+    text: "En raison de manque de pluit qui touche notre pays, l'eau n'est pas toujours disponible. Avec l'application SEAAL, vous pouvez être informé sur les temps de coupures et rétablissments, et plannifer vos taches implicants l'ulilisation d'eau.",
     icon: mdiFormatListNumbered,
   },
   {
     id: 2,
     title: "Facile à utiliser",
-    text: "L'application est conçu pour vous offrire un experience utlisateur simple et agréable. Choisissez votre wilaya, puis choisissez la commune, et recevez toutes information liées au porgramme d'eau de la semaine courante ainsi que la semaine prochaine.",
+    text: "L'application est conçu pour vous offrire une experience utlisateur simple et agréable. Choisissez votre wilaya, puis choisissez la commune, et recevez toutes informations liées au porgramme d'eau de la semaine courante ainsi que la semaine prochaine.",
     icon: mdiCellphoneCheck,
   },
   {
     id: 3,
     title: "Disponible à tout moment",
-    text: "Ayez accès au programmes d'eau à n'importe quel moment de la journée, ou que vous soyez, gratuitement.",
+    text: "Ayez accès au programmes d'eau à n'importe quel moment de la journée, où que vous soyez, gratuitement.",
     icon: mdiClockFast,
   },
   {

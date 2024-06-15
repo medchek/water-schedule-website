@@ -4,6 +4,8 @@ This project is a website dedicated to showcase the water availablity schedules 
 
 **Note:** The website and the phone app are just for demonstration purposes, however, they are also production-ready.
 
+[DEMO](https://water-schedule-website.vercel.app/)
+
 <p align="center">
   <img src="./.github/app-showcase.png" />
 </p>
